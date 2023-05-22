@@ -9,6 +9,7 @@
       <%= link_to "Show this entry", entry %>
     </p>
   <% end %>
+  <%= paginate @entries %>
 </div>
 
 <%= link_to "New entry", new_user_entry_path %>

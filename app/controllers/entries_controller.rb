@@ -4,7 +4,7 @@ class EntriesController < ApplicationController
 
   # GET /entries or /entries.json
   def index
-    @entries = current_user.entries
+    @entries = current_user.entries.page(params[:page])
   end
 
   # GET /entries/1 or /entries/1.json
